@@ -61,10 +61,10 @@
                     <ul class="thumbnails">
                         <li>
                             <div class="caption">
-                                <h5>Caption</h5>
+                                <h5><a href="http://highfidelityfilms.co.uk/index.php/home_controller/getFilmDetails?id=<?php echo $film[0]['film_id']?>" > <?php echo $film[0]['title']  ?></a></h5>
                             </div>
                             <div class="thumbnail">
-                                <img src="http://placehold.it/216x320" alt="">
+                                <img src="<?php echo $film[0]['poster_small']  ?>" width="216" height="320" alt="">
                             </div>
                         </li>
                         <li>
@@ -72,12 +72,40 @@
                                 <h5>Caption</h5>
                             </div>
                             <div class="thumbnail">
-                                <img src="http://placehold.it/216x320" alt="">
+                                <img src="<?php echo $film[1]['poster_small']  ?>" width="216" height="320" alt="">
                             </div>
                         </li>
                         <li>
                             <div class="caption">
-                                <h5>Caption</h5>
+                                <h5><?php echo $film[1]['title']  ?></h5>
+                            </div>
+                            <div class="thumbnail">
+                                <img src="<?php echo $film[1]['poster_small']  ?>" width="216" height="320" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="caption">
+                                <h5><?php echo $film[2]['title']  ?></h5>
+                            </div>
+                            <div class="thumbnail">
+                                <img src="<?php echo $film[2]['poster_small']  ?>" width="216" height="320" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <ul class="thumbnails">
+                        <li>
+                            <div class="caption">
+                                <h5><?php echo $film[3]['title']  ?></h5>
+                            </div>
+                            <div class="thumbnail">
+                                <img src="<?php echo $film[3]['poster_small']  ?>" width="216" height="320" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="caption">
+                                <h5><?php echo $film[0]['title']  ?></h5>
                             </div>
                             <div class="thumbnail">
                                 <img src="http://placehold.it/216x320" alt="">
@@ -85,7 +113,15 @@
                         </li>
                         <li>
                             <div class="caption">
-                                <h5>Caption</h5>
+                                <h5><?php echo $film[1]['title']  ?></h5>
+                            </div>
+                            <div class="thumbnail">
+                                <img src="http://placehold.it/216x320" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="caption">
+                                <h5><?php echo $film[2]['title']  ?></h5>
                             </div>
                             <div class="thumbnail">
                                 <img src="http://placehold.it/216x320" alt="">
@@ -97,7 +133,7 @@
                     <ul class="thumbnails">
                         <li>
                             <div class="caption">
-                                <h5>Caption</h5>
+                                <h5><?php echo $film[3]['title']  ?></h5>
                             </div>
                             <div class="thumbnail">
                                 <img src="http://placehold.it/216x320" alt="">
@@ -105,7 +141,7 @@
                         </li>
                         <li>
                             <div class="caption">
-                                <h5>Caption</h5>
+                                <h5><?php echo $film[0]['title']  ?></h5>
                             </div>
                             <div class="thumbnail">
                                 <img src="http://placehold.it/216x320" alt="">
@@ -113,7 +149,7 @@
                         </li>
                         <li>
                             <div class="caption">
-                                <h5>Caption</h5>
+                                <h5><?php echo $film[1]['title']  ?></h5>
                             </div>
                             <div class="thumbnail">
                                 <img src="http://placehold.it/216x320" alt="">
@@ -121,43 +157,7 @@
                         </li>
                         <li>
                             <div class="caption">
-                                <h5>Caption</h5>
-                            </div>
-                            <div class="thumbnail">
-                                <img src="http://placehold.it/216x320" alt="">
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="item">
-                    <ul class="thumbnails">
-                        <li>
-                            <div class="caption">
-                                <h5>Caption</h5>
-                            </div>
-                            <div class="thumbnail">
-                                <img src="http://placehold.it/216x320" alt="">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="caption">
-                                <h5>Caption</h5>
-                            </div>
-                            <div class="thumbnail">
-                                <img src="http://placehold.it/216x320" alt="">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="caption">
-                                <h5>Caption</h5>
-                            </div>
-                            <div class="thumbnail">
-                                <img src="http://placehold.it/216x320" alt="">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="caption">
-                                <h5>Caption</h5>
+                                <h5><?php echo $film[2]['title']  ?></h5>
                             </div>
                             <div class="thumbnail">
                                 <img src="http://placehold.it/216x320" alt="">
@@ -180,34 +180,34 @@
                 <ul class="thumbnails">
                     <li>
                         <div class="caption">
-                            <h5>Caption</h5>
+                            <h5><?php echo $film[0]['title']  ?></h5>
                         </div>
                         <div class="thumbnail">
-                            <img src="http://placehold.it/216x320" alt="">
+                            <img src="<?php echo $film[0]['poster_small']  ?>" width="216" height="320" alt="">
                         </div>
                     </li>
                     <li>
                         <div class="caption">
+                            <h5><?php echo $film[1]['title']  ?></h5>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="<?php echo $film[1]['poster_small']  ?>" width="216" height="320" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="<?php echo $film[2]['title']  ?>">
                             <h5>Caption</h5>
                         </div>
                         <div class="thumbnail">
-                            <img src="http://placehold.it/216x320" alt="">
+                            <img src="<?php echo $film[2]['poster_small']  ?>" width="216" height="320" alt="">
                         </div>
                     </li>
                     <li>
                         <div class="caption">
-                            <h5>Caption</h5>
+                            <h5><?php echo $film[3]['title']  ?></h5>
                         </div>
                         <div class="thumbnail">
-                            <img src="http://placehold.it/216x320" alt="">
-                        </div>
-                    </li>
-                    <li>
-                        <div class="caption">
-                            <h5>Caption</h5>
-                        </div>
-                        <div class="thumbnail">
-                            <img src="http://placehold.it/216x320" alt="">
+                            <img src="<?php echo $film[3]['poster_small']  ?>" width="216" height="320" alt="">
                         </div>
                     </li>
                 </ul>
@@ -216,7 +216,7 @@
                 <ul class="thumbnails">
                     <li>
                         <div class="caption">
-                            <h5>Caption</h5>
+                            <h5><?php echo $film[0]['title']  ?></h5>
                         </div>
                         <div class="thumbnail">
                             <img src="http://placehold.it/216x320" alt="">
@@ -224,7 +224,7 @@
                     </li>
                     <li>
                         <div class="caption">
-                            <h5>Caption</h5>
+                            <h5><?php echo $film[1]['title']  ?></h5>
                         </div>
                         <div class="thumbnail">
                             <img src="http://placehold.it/216x320" alt="">
@@ -232,7 +232,7 @@
                     </li>
                     <li>
                         <div class="caption">
-                            <h5>Caption</h5>
+                            <h5><?php echo $film[2]['title']  ?></h5>
                         </div>
                         <div class="thumbnail">
                             <img src="http://placehold.it/216x320" alt="">
@@ -240,7 +240,7 @@
                     </li>
                     <li>
                         <div class="caption">
-                            <h5>Caption</h5>
+                            <h5><?php echo $film[3]['title']  ?></h5>
                         </div>
                         <div class="thumbnail">
                             <img src="http://placehold.it/216x320" alt="">
@@ -340,17 +340,17 @@
 <!-- Row of articles -->
 <div class="row">
     <div class="span4">
-        <h2>Heading</h2>
+        <h2>Sample Article</h2>
         <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
         <p><a class="btn" href="#">View details &raquo;</a></p>
     </div>
     <div class="span4">
-        <h2>Heading</h2>
+        <h2>Sample Article</h2>
         <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
         <p><a class="btn" href="#">View details &raquo;</a></p>
     </div>
     <div class="span4">
-        <h2>Heading</h2>
+        <h2>Sample Article</h2>
         <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
         <p><a class="btn" href="#">View details &raquo;</a></p>
     </div>

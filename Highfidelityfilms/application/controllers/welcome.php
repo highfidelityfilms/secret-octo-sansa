@@ -2,6 +2,14 @@
 
 class Welcome extends CI_Controller {
 
+    function __construct()
+    {
+        parent::__construct();
+        $this->load->helper('url');
+        $this->load->model('home_model');
+        $this->load->model('user_model');
+    }
+
 	/**
 	 * Index Page for this controller.
 	 *
@@ -18,11 +26,19 @@ class Welcome extends CI_Controller {
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
 	public function index()
-	{
+                	{
+                        $loggedin = $this->user_model->is_loggedin();
+
+                        if ($loggedin === false) {
+
+
+
+        $films=$this->home_model->getFilms();
+        $data['film'] =$films;
         $this->load->view('header_home');
-        $this->load->view('home_view');
+        $this->load->view('home_view',$data);
         $this->load->view('footer_home');
-	}
+                    }}
 }
 
 /* End of file welcome.php */
